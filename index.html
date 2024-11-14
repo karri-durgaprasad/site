@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  .header{
+    display: flex;
+    justify-content: end;
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+
+  }
+  .header p{
+    margin: 50px;
+  }
+  .one{
+    height: 800px;
+    background-image: url('car photos/welcome-banner.jpg');
+   padding-top: 200px;
+   background-repeat: no-repeat;
+   
+  }
+  .one-button{
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #4E4FFA;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: larger;
+    transition: 1s;
+  }
+  .one-button:hover{
+    background-color: blue;
+    cursor: pointer;
+
+  }
+  .two{
+    padding-top: 150px;
+    padding-left: 160px;
+    padding-bottom: 0px;
+    padding-right: 160px;
+  
+  }
+  .two-button{
+    background-color: #4E4FFA;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 4px  ;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 1s;
+  }
+  .two-button:hover{
+    background-color: blue;
+    cursor: pointer;
+  }
+ .three{
+  display: flex;
+  padding-top: 0px;
+ padding-left: 250px;
+ padding-right: 250px;
+  
+ }
+ .three-inner{
+  border: solid black 1px;
+  margin: 20px;
+  height: 350px;
+  width: 300px;
+  margin-bottom: 150px;
+ }
+ .three-inner:hover{
+  background-color: #4E4FFA;
+  color: white;
+  cursor: pointer;
+ }
+ .four-button{
+  background-color: #4E4FFA;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 4px  ;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 1s;
+ }
+ .four-button:hover{
+  background-color: blue;
+    cursor: pointer;
+ }
+ .five-flex{
+  display: flex;
+  justify-content: center;
+ }
+ .five-flex-inner{
+  border: solid black 1px;  
+  margin: 15px;
+ }
+.client{
+  border: black solid 1px;
+  margin:10px ;
+  border: none;
+  border-radius: 4px;
+}
+.client:hover{
+  background-color: #4E4FFA;
+  cursor: pointer;
+  color: white;
+}
+
+</style>
+</head>
+<body style="padding-top: 120px; margin: 0px; padding-bottom: 300px;" >
+  <div class="header">
+    <p style="margin-right: 200px;font-weight: bold;font-size: larger;">CARVILLA</p>
+   <a href="#one"><p>HOME</p></a>
+   <a href="#three"><p>SERVICE</p></a>
+   <a href="#five" ><p>FEATURED CARS</p></a>
+   <a href="#four"><p>NEW CARS</p></a>
+   <a href="#brand" ><p>BRANDS</p></a>
+  <a href="#contact" ><p>CONTACT</p></a>
+  </div>
+  <div class="one" id="one">
+       <h1 style="margin-top:0px;font-size: 40px;font-weight: bold; text-align: center; color: white;"> GET YOUR DESIRED CAR IN REASONABLE PRICE</h1>
+       <p style="text-align: center; font-size: larger; font-weight: bolder; color: white;" >ipsum dolor sit amet consectetur adipisicing elit. Doloremque omn</p>
+       <p style="text-align: center; font-size: larger; font-weight: bolder; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque omnis,</p>
+       <div style="display: flex; justify-content: center;  margin-top: 70px;">
+        <button class="one-button">Contact Us</button>
+       </div>
+  </div>
+  <div class="two">
+      <div class="row" style="position: relative; bottom: 300px; background-color: white; padding: 100px; border-radius: 5px; z-index: 0;">
+        <div class="col-sm-9">
+         <div class="row" style="margin-bottom: 50px;">
+          <div class="col-sm-4">
+            <p>Select year</p>
+            <select>
+              <option>year</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <p>Select Make</p>
+            <select>
+              <option>Make</option>
+              <option>audi</option>
+              <option>benz</option>
+              <option>BMW</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <p>Select Model</p>
+            <select>
+              <option>Model</option>
+              <option>kio-rio</option>
+              <option>mastubhisi</option>
+              <option>ford</option>
+            </select>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-sm-4">
+            <p>Select Style</p>
+            <select>
+              <option>Style</option>
+              <option>sedan</option>
+              <option>van</option>
+              <option>roadstar</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <p>Select Condition</p>
+            <select>
+              <option>Condition</option>
+              <option>something</option>
+              <option>something</option>
+              <option>something</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <p>Select Price</p>
+            <select>
+              <option>Price</option>
+              <option>0000</option>
+              <option>0000</option>
+              <option>0000</option>
+            </select>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-3" style="display: flex; justify-content: center; align-items: center;">
+          <button class="two-button">search</button>
+        </div>
+        
+      </div> 
+    </div>
+  </div>
+  <div class="three" id="three">
+    <div class="three-inner">
+      <i class="fas fa-car" style="font-size: 50px; margin-left: 40%; margin-top: 40px;margin-bottom: 40px;"></i>
+      <p style="text-align: center; font-size: larger; font-weight: bold;">largest dealership of cars</p>
+      <p style="text-align: center;margin-right: 20px; margin-left: 20px; margin-top: 20px;" >mo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. dgga dgbb hei0 kdvkvaij  pjd</p>
+    </div>
+    <div class="three-inner">
+      <i class="fas fa-cog" style="font-size: 50px; margin-left: 40%; margin-top: 40px;margin-bottom: 40px;"></i>
+      <p style="text-align: center; font-size: larger; font-weight: bold;">unlimited repair warranty</p>
+      <p style="text-align: center;margin-right: 20px; margin-left: 20px; margin-top: 20px;" >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. gnfdbsfgdgv vghn bbfbfgfgs fbf</p>
+    </div>
+    <div class="three-inner">
+      <i class="fas fa-shield-alt" style="font-size: 50px; margin-left: 40%; margin-top: 40px;margin-bottom: 40px;"></i>
+      <p style="text-align: center; font-size: larger; font-weight: bold;">insurance support</p>
+      <p style="text-align: center;margin-right: 20px; margin-left: 20px; margin-top: 20px;" >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.bxfg  dvdgrhojvo ojj rtiveposf</p>
+    </div>
+  </div>
+  <div class="four" id="four">
+    <p style="text-align: center;">checkout the latest cars</p>
+    <h1 style="text-align: center; margin-bottom: 70px;">Newest Cars</h1>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+         <div class="row">
+          <div class="col-sm-6">
+            <img src="car photos/ncm3.png" alt="Newwst car">
+          </div>
+          <div class="col-sm-6">
+            <h1>Ferrari 488 Superfasr</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa eaque est cum iste quisquam molestiae repellat aperiam unde maxime! Error aut saepe eius autem minus suscipit blanditiis repudiandae voluptate provident!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos numquam impedit similique voluptatum aspernatur ipsum corrupti quis expedita. Maiores</p>
+          <div style="display: flex; justify-content: center;">
+            <button class="four-button">View Details</button>
+            </div>
+          </div>
+         </div> 
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="car photos/ncm2.png" alt="Newest cars">
+            </div>
+            <div class="col-sm-6">
+              <h1>BMW series-3wagon</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore fugit eaque in ex adipisci iste consequatur repudiandae voluptatem similique voluptas quisquam ipsum, vitae non porro, numquam, architecto id veniam.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ratione eos id atque. Aliquam fugiat minima placeat veniam laborum id? Recusandae quos nisi.</p>
+              <div style="display: flex; justify-content: center;">
+                <button class="four-button">View Details</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-6">
+          <img src="car photos/ncm1.png" alt="Newest cars">
+          </div>
+          <div class="col-sm-6">
+            <h1>Chevrolet cemaro ZA100</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat doloribus aspernatur vitae maxime iure hic modi voluptatem nisi praesentium, eligendi, enim cumque, ipsa inventore dicta est rerum! Eos, quisquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum quasi impedit, nam ratione ab atque nesciunt, eos ullam aliquam labore officiis su</p>
+            <div style="display: flex; justify-content: center;">
+              <button class="four-button">View Details</button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+  <div class="five" id="five">
+    <p style="text-align: center; margin-top: 200px;">checkout the featured cars</p>
+    <h1 style="text-align: center;">Featured Cars</h1>
+    <div class="five-flex">
+      <div class="five-flex-inner">
+       <div style="display: flex;justify-content: center; align-items: center; height: 250px;">
+        <img src="car photos/fc1.png" alt="car image">
+       </div>
+       <div style="border: solid grey 1px;">
+       <p>model: 2017 3100 mi 240HPautomatic</p>
+      </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
+          <img src="car photos/fc2.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;">
+          <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex;  align-items: center; height: 250px; justify-content: center;">
+          <img src="car photos/fc3.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;"> 
+         <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
+          <img src="car photos/fc4.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;">
+          <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; padding: 100px; padding-top: 0px;padding-bottom: 0px;">
+      <div style="margin: 55px; padding-left: 30px;">
+        <h6>BMW 6-series gran coupe</h6>
+        <h1>$89,395</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>chevrolet camaro wmv20</h6>
+        <h1>$66,575</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>lamborghini v520</h6>
+        <h1>$125,250 </h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>audi a3 sedan</h6>
+        <h1>$95,500</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+    </div>
+    <div class="five-flex">
+      <div class="five-flex-inner">
+       <div style="display: flex;justify-content: center; align-items: center; height: 250px;">
+        <img src="car photos/fc5.png" alt="car image">
+       </div>
+       <div style="border: solid grey 1px;">
+       <p>model: 2017 3100 mi 240HPautomatic</p>
+      </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
+          <img src="car photos/fc6.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;">
+          <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex;  align-items: center; height: 250px; justify-content: center;">
+          <img src="car photos/fc7.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;"> 
+         <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+      <div class="five-flex-inner">
+        <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
+          <img src="car photos/fc8.png" alt="car image">
+        </div>
+        <div style="border: solid grey 1px;">
+          <p>model: 2017 3100 mi 240HPautomatic</p>
+        </div>
+      </div>
+    </div>
+     
+    <div style="display: flex; justify-content: center; padding: 100px; padding-top: 0px;">
+      <div style="margin: 55px; padding-left: 30px;">
+        <h6>infiniti z5</h6>
+        <h1>$89,395</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>porsche 718 cayman</h6>
+        <h1>$66,575</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>bmw 8-series coupe</h6>
+        <h1>$125,250 </h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+      <div style="margin: 50px;">
+        <h6>BMW xseries-6</h6>
+        <h1>$95,500</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+      </div>
+  </div> 
+  <h1 style="text-align: center; margin-bottom: 100px;">What Our clients say</h1>
+  <div style="display: flex; justify-content: center; padding-left: 200px;padding-right: 200px; padding-bottom:200px ;">
+    <div class="client">
+     <div style="display: flex; justify-content: center; align-items: center; padding-top: 50px; padding-bottom: 50px;">
+      <img src="car photos/c1.png" alt="client">
+     </div>
+     <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil, veritatis laudantium corrupti explicabo totam ea praesentium doloribus. Neque sed ad quia fugit illum cum repellendus, provident ut obcaecati soluta!</p>
+     <h5 style="text-align: center;">Tom</h5>
+     <h5 style="text-align: center;">London</h5>
+
+    </div>
+    <div class="client">
+      <div style="display: flex; justify-content: center; align-items: center;padding-top: 50px; padding-bottom: 50px;">
+        <img src="car photos/c2.png" alt="client">
+       </div>
+       <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil, veritatis laudantium corrupti explicabo totam ea praesentium doloribus. Neque sed ad quia fugit illum cum repellendus, provident ut obcaecati soluta!</p>
+       <h5 style="text-align: center;">Fancy</h5>
+       <h5 style="text-align: center;">Chikago</h>
+  
+    </div>
+    <div class="client">
+      <div style="display: flex; justify-content: center; align-items: center;padding-top: 50px; padding-bottom: 50px;">
+        <img src="car photos/c3.png" alt="client">
+       </div>
+       <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil, veritatis laudantium corrupti explicabo totam ea praesentium doloribus. Neque sed ad quia fugit illum cum repellendus, provident ut obcaecati soluta!</p>
+       <h5 style="text-align: center;">Jerry</h5>
+       <h5 style="text-align: center;">Paris</h5>
+    </div>
+  </div>
+    <div class="brands" style="display: flex; justify-content: space-evenly; margin-bottom: 150px;" id="brand">
+      <img src=" car photos/br1.png" alt="brand name">      
+      <img src="car photos/br2.png " alt="brand name">
+      <img src="car photos/br3.png " alt="brand name">
+      <img src=" car photos/br4.png" alt="brand name">
+      <img src="car photos/br5.png " alt="brand name">
+      <img src="car photos/br6.png " alt="brand name">
+    </div>
+    <div class="contact" style="display: flex; justify-content: space-around; padding-left:100px ;padding-right:100px ; background-color: #2A2D54; color: white; padding-top: 80px; padding-bottom: 80px;" id="contact">
+      <div style="margin: 20px;">
+        <h1 style="margin-bottom: 50px;">CARVILLA</h1>
+        <p>Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.</p>
+        <p>name@domain.com</p>
+        <p> +1 (222) 1234567890</p>
+      </div>
+      <div style="margin: 20px; ">
+        <h6 style="margin-bottom: 50px;">about devloon</h6>
+        <p>About Us</p>
+        <p>Carrer</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div>
+
+      </div>
+      <div style="margin: 20px; padding-top: 40px;">
+
+     <p>BMW</p>
+     <p>lamborgini</p>
+     <p>camaro</p>
+     <p>audi</p>
+     <p>infiniti</p>
+     <p>nissan</p>
+      </div>
+      <div style="margin: 20px; padding-top: 40px;">
+    <p>   ferrari</p>
+      <p>  porsche</p>
+      <p>  land rover</p>
+       <p>aston martin</p>
+       <p> mersedes</p>
+     <p>opel</p>
+      </div>
+<div style="margin: 20px;">
+  <h6 style="margin-bottom: 50px;">NEWS LETTER</h6>
+  <P>Subscribe to get latest news update and informations</P>
+   <input type="email" placeholder="Add an E-mail"> 
+</div>
+    </div>
+  </body>
+  </html>
